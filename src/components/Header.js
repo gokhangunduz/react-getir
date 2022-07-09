@@ -1,3 +1,6 @@
+import {RiGlobalLine} from 'react-icons/ri'
+import {FaUserAlt, FaUserPlus} from 'react-icons/fa'
+
 function Header() {
   return (
     <header className="bg-brand-color">
@@ -13,20 +16,23 @@ function Header() {
         <nav className="flex gap-x-8 text-sm font-semibold">
           <a
             href="#"
-            className="text-white text-opacity-80 hover:text-opacity-100 transition-all"
+            className="flex items-center gap-3 text-white text-opacity-80 hover:text-opacity-100 transition-all"
           >
+            <RiGlobalLine size={20} />
             Türkçe (TR)
           </a>
           <a
             href="#"
-            className="text-white text-opacity-80 hover:text-opacity-100 transition-all"
+            className="flex items-center gap-3 text-white text-opacity-80 hover:text-opacity-100 transition-all"
           >
+            <FaUserAlt size={20} />
             Giriş Yap
           </a>
           <a
             href="#"
-            className="text-white text-opacity-80 hover:text-opacity-100 transition-all"
+            className="flex items-center gap-3 text-white text-opacity-80 hover:text-opacity-100 transition-all"
           >
+            <FaUserPlus size={20} />
             Kayıt Ol
           </a>
         </nav>
