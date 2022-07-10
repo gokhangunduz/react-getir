@@ -28,7 +28,7 @@ function Hero() {
           />
         </div>
       </Slider>
-      <div className="container flex justify-between items-center absolute top-0 left-1/2 -translate-x-1/2 h-full z-20">
+      <div className="container px-[7%] flex justify-between items-center absolute top-0 left-1/2 -translate-x-1/2 h-full z-20">
         <div>
           <img
             src="https://getir.com/_next/static/images/bimutluluk-b3a7fcb14fc9a9c09b60d7dc9b1b8fd6.svg"
@@ -52,7 +52,7 @@ function Hero() {
               placeholder="Telefon Numarası"
             />
           </div>
-          <button className="flex justify-center items-center w-full text-sm rounded-md font-semibold bg-brand-yellow-color p-6 h-[48px] text-secondary-color">
+          <button className="flex justify-center items-center w-full text-sm rounded-md font-semibold bg-brand-yellow-color p-6 h-[48px] text-primary-color">
             Telefon numarası ile devam et
           </button>
         </div>
