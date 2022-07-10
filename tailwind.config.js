@@ -7,7 +7,8 @@ module.exports = {
       colors: {
         'brand-color': '#4c3398',
         'primary-color': '#5d3ebc',
-        'secondary-color': '#7849f7'
+        'secondary-color': '#7849f7',
+        'brand-yellow-color': '#ffd300'
       }
     },
   },

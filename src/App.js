@@ -1,10 +1,10 @@
 import Header from './components/Header'
-import Slider from './components/Slider'
+import Hero from './components/Hero'
 function App() {
   return (
     <>
     <Header />
-    <Slider />
+    <Hero />
     </>
   );
 }
