@@ -7,6 +7,7 @@
 
 @layer base {
     html, body {
+        overflow-x: hidden;
         font-family: 'Open Sans', sans-serif;
         @apply antialiased
     }

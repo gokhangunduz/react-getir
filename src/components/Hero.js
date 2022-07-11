@@ -8,6 +8,8 @@ function Hero() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 10000,
   };
 
   return (
@@ -28,7 +30,7 @@ function Hero() {
           />
         </div>
       </Slider>
-      <div className="container px-[7%] flex justify-between items-center absolute top-0 left-1/2 -translate-x-1/2 h-full z-20">
+      <div className="container flex justify-between items-center absolute top-0 left-1/2 -translate-x-1/2 h-full z-20">
         <div>
           <img
             src="https://getir.com/_next/static/images/bimutluluk-b3a7fcb14fc9a9c09b60d7dc9b1b8fd6.svg"

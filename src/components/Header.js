@@ -4,7 +4,7 @@ import {FaUserAlt, FaUserPlus} from 'react-icons/fa'
 function Header() {
   return (
     <header className="bg-brand-color">
-      <div className="container mx-auto px-[7%] h-11 flex items-center justify-between">
+      <div className="container mx-auto h-11 flex items-center justify-between">
         <div id="logo">
           <a href="logo">
             <img
