@@ -12,3 +12,16 @@
         @apply antialiased
     }
 }
+
+.container {
+    width: 66.6%;
+}
+
+.flag-country > button {
+    @apply h-14 border-2 border-gray-200 hover:border-brand-color rounded-lg transition-colors
+}
+
+.flag-country button > span >span {
+    font-size: 14px;
+    padding-left: 8px;
+}

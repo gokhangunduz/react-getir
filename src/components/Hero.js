@@ -1,4 +1,6 @@
+import { useState } from "react";
 import Slider from "react-slick";
+import ReactFlagsSelect from "react-flags-select";
 
 function Hero() {
   const settings = {
@@ -11,6 +13,8 @@ function Hero() {
     autoplay: true,
     autoplaySpeed: 10000,
   };
+
+  const [country, setCountry] = useState("TR");
 
   return (
     <div className="relative h-[500px] before:bg-gradient-to-r before:from-primary-color before:to-transparent before:absolute before:inset-0 before:w-full before:h-full before:z-10">
@@ -42,21 +46,36 @@ function Hero() {
             kapınızda
           </h3>
         </div>
-        <div className="flex flex-col rounded-md p-5 bg-white">
-          <h3 className="text-l font-semibold text-primary-color text-center">
+        <div className="flex flex-col rounded-md p-6 w-[400px] bg-white">
+          <h3 className="text-l font-semibold text-primary-color text-center mb-4 ">
             Giriş yap veya kayıt ol
           </h3>
           <div className="flex">
-            <select name="" id=""></select>
+            <ReactFlagsSelect
+              countries={["US", "GB", "FR", "DE", "IT","TR"]}
+              customLabels={{
+                US: "+1",
+                GB: "+24",
+                FR: "+30",
+                DE: "+41",
+                IT: "+44",
+                TR: "+90"
+              }}
+              selected={country}
+              onSelect={(country) => setCountry(country)}
+              className="flag-country pr-2"
+            />
             <input
-              className="border-solid border-1 border-brand-color"
+              className="h-14 px-4 border-solid border-2 hover:border-brand-color focus:border-brand-color transition-colors rounded-lg w-full"
               type="text"
               placeholder="Telefon Numarası"
             />
           </div>
-          <button className="flex justify-center items-center w-full text-sm rounded-md font-semibold bg-brand-yellow-color p-6 h-[48px] text-primary-color">
+            <div className="pt-2">
+            <button className="flex justify-center items-center w-full text-sm rounded-md font-semibold bg-brand-yellow-color p-6 h-[48px] text-primary-color hover:bg-primary-color hover:text-brand-yellow-color transition-all ">
             Telefon numarası ile devam et
           </button>
+            </div>
         </div>
       </div>
     </div>
