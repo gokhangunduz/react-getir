@@ -4,6 +4,7 @@ import Categories from './components/Categories'
 import Campaigns from './components/Campaigns'
 import Banner from './components/Banner'
 import Cards from './components/Cards'
+import Footer from './components/Footer'
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
     <Campaigns />
     <Banner />
     <Cards />
+    <Footer />
     </>
   );
 }

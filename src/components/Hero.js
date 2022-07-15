@@ -55,9 +55,9 @@ function Hero() {
               countries={["US", "GB", "FR", "DE", "IT","TR"]}
               customLabels={{
                 US: "+1",
-                GB: "+24",
+                GB: "+14",
                 FR: "+30",
-                DE: "+41",
+                DE: "+40",
                 IT: "+44",
                 TR: "+90"
               }}
