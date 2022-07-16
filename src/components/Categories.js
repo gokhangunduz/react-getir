@@ -29,70 +29,13 @@ function Categories() {
         <div className="container mx-auto p-6" >
             <h3 className="text-gray-700 font-semibold text-sm pb-2">Kategoriler</h3>
             <div className="grid grid-cols-10 gap-2">
-                <div className="flex flex-col items-center hover:cursor-pointer hover:bg-purple-100 hover:rounded-md" >
-                    <img className="rounded-md mt-2 h-12" src={photourls[0]} alt="Su & İçecek" />
-                    <h6 className="text-gray-600 text-base font-semibold m-3 hover:text-brand-color ">Su & İçecek</h6>
-                </div>
-                <div className="flex flex-col items-center hover:cursor-pointer hover:bg-purple-100 hover:rounded-md" >
-                    <img className="rounded-md mt-2 h-12" src={photourls[1]} alt="Meyve" />
-                    <h6 className="text-gray-600 text-base font-semibold m-3 hover:text-brand-color ">Meyve</h6>
-                </div>
-                <div className="flex flex-col items-center hover:cursor-pointer hover:bg-purple-100 hover:rounded-md" >
-                    <img className="rounded-md mt-2 h-12" src={photourls[2]} alt="Fırından" />
-                    <h6 className="text-gray-600 text-base font-semibold m-3 hover:text-brand-color ">Fırından</h6>
-                </div>
-                <div className="flex flex-col items-center hover:cursor-pointer hover:bg-purple-100 hover:rounded-md" >
-                    <img className="rounded-md mt-2 h-12" src={photourls[3]} alt="Temel Gıda" />
-                    <h6 className="text-gray-600 text-base font-semibold m-3 hover:text-brand-color ">Temel Gıda</h6>
-                </div>
-                <div className="flex flex-col items-center hover:cursor-pointer hover:bg-purple-100 hover:rounded-md" >
-                    <img className="rounded-md mt-2 h-12" src={photourls[4]} alt="Atıştırmalık" />
-                    <h6 className="text-gray-600 text-base font-semibold m-3 hover:text-brand-color ">Atıştırmalık</h6>
-                </div>
-                <div className="flex flex-col items-center hover:cursor-pointer hover:bg-purple-100 hover:rounded-md" >
-                    <img className="rounded-md mt-2 h-12" src={photourls[5]} alt="Dondurma" />
-                    <h6 className="text-gray-600 text-base font-semibold m-3 hover:text-brand-color ">Dondurma</h6>
-                </div>
-                <div className="flex flex-col items-center hover:cursor-pointer hover:bg-purple-100 hover:rounded-md" >
-                    <img className="rounded-md mt-2 h-12" src={photourls[6]} alt="Süt" />
-                    <h6 className="text-gray-600 text-base font-semibold m-3 hover:text-brand-color ">Süt</h6>
-                </div>
-                <div className="flex flex-col items-center hover:cursor-pointer hover:bg-purple-100 hover:rounded-md" >
-                    <img className="rounded-md mt-2 h-12" src={photourls[7]} alt="Kahvaltılık" />
-                    <h6 className="text-gray-600 text-base font-semibold m-3 hover:text-brand-color ">Kahvaltılık</h6>
-                </div>
-                <div className="flex flex-col items-center hover:cursor-pointer hover:bg-purple-100 hover:rounded-md" >
-                    <img className="rounded-md mt-2 h-12" src={photourls[8]} alt="Yiyecek" />
-                    <h6 className="text-gray-600 text-base font-semibold m-3 hover:text-brand-color ">Yiyecek</h6>
-                </div>
-                <div className="flex flex-col items-center hover:cursor-pointer hover:bg-purple-100 hover:rounded-md" >
-                    <img className="rounded-md mt-2 h-12" src={photourls[9]} alt="Fit & Form" />
-                    <h6 className="text-gray-600 text-base font-semibold m-3 hover:text-brand-color ">Fit & Form</h6>
-                </div>
-                <div className="flex flex-col items-center hover:cursor-pointer hover:bg-purple-100 hover:rounded-md" >
-                    <img className="rounded-md mt-2 h-12" src={photourls[10]} alt="Kişisel" />
-                    <h6 className="text-gray-600 text-base font-semibold m-3 hover:text-brand-color ">Kişisel</h6>
-                </div>
-                <div className="flex flex-col items-center hover:cursor-pointer hover:bg-purple-100 hover:rounded-md" >
-                    <img className="rounded-md mt-2 h-12" src={photourls[11]} alt="Ev Bakım" />
-                    <h6 className="text-gray-600 text-base font-semibold m-3 hover:text-brand-color ">Ev Bakım</h6>
-                </div>
-                <div className="flex flex-col items-center hover:cursor-pointer hover:bg-purple-100 hover:rounded-md" >
-                    <img className="rounded-md mt-2 h-12" src={photourls[12]} alt="Teknoloji" />
-                    <h6 className="text-gray-600 text-base font-semibold m-3 hover:text-brand-color ">Teknoloji</h6>
-                </div>
-                <div className="flex flex-col items-center hover:cursor-pointer hover:bg-purple-100 hover:rounded-md" >
-                    <img className="rounded-md mt-2 h-12" src={photourls[13]} alt="Hayvan" />
-                    <h6 className="text-gray-600 text-base font-semibold m-3 hover:text-brand-color ">Hayvan</h6>
-                </div>
-                <div className="flex flex-col items-center hover:cursor-pointer hover:bg-purple-100 hover:rounded-md" >
-                    <img className="rounded-md mt-2 h-12" src={photourls[14]} alt="Bebek" />
-                    <h6 className="text-gray-600 text-base font-semibold m-3 hover:text-brand-color ">Bebek</h6>
-                </div>
-                <div className="flex flex-col items-center hover:cursor-pointer hover:bg-purple-100 hover:rounded-md" >
-                    <img className="rounded-md mt-2 h-12" src={photourls[15]} alt="Cinsel" />
-                    <h6 className="text-gray-600 text-base font-semibold m-3 hover:text-brand-color ">Cinsel</h6>
-                </div>
+                {photourls.map((url, index) => (
+
+                    <div index={index} className="flex flex-col items-center hover:cursor-pointer hover:bg-purple-100 hover:rounded-md" >
+                        <img className="rounded-md mt-2 h-12" src={url} alt="Su & İçecek" />
+                        <h6 className="text-gray-600 text-base font-semibold m-3 hover:text-brand-color ">Su & İçecek</h6>
+                    </div>
+                ))}
             </div>
         </div>
         </div>
